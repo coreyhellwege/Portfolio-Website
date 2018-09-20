@@ -13,6 +13,17 @@
     src: url('/assets/fonts/ACaslonPro-Regular.otf')
 }
 
+@font-face {
+    font-family: 'AdobeCaslonProItalic';
+    src: url('/assets/fonts/ACaslonPro-Italic.otf')
+}
+
+::selection {
+    background: #FFFF00;
+}
+::-moz-selection { /* Code for Firefox */
+    background: #FFFF00;
+}
 
 h1 {
     padding-top: 150px;
@@ -21,6 +32,7 @@ h1 {
     color: #1B34F9;
     font-family: PTMonoRegular;
     font-size: 48px;
+    line-height: 60px;
 }
 
 p {
@@ -72,19 +84,62 @@ footer {
 
 main {
     /* padding: 10px; */
-    
 }
-table {
+
+form {
     margin: 0px;
     margin-left: 150px;
     margin-right: 250px;
-    border: 1px solid #323333;
+}
+
+table {
+    border: 1.5px solid #323333;
 }
 
 td {
-    border-bottom: 1px solid #323333;
-    color: #323333;
     width: 500px;
+}
+
+hr {
+    margin: 0;
+    border-top: 1.5px solid #323333;
+}
+
+button {
+    background-color: #d4ece8;
+    border: none;
+    background-color: #323333;
+    color: #d4ece8;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 16px; */
+    margin-top: 6px;
+    cursor: pointer;
+    font-family: AdobeCaslonProRegular;
+}
+
+button:hover {
+    background-color: #1B34F9;
+}
+
+textarea, input[type=text],[type=email] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #d4ece8;
+    color: #1B34F9;
+    font-family: AdobeCaslonProItalic;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 .wrapper {
@@ -98,6 +153,8 @@ td {
 }
 
 .box {
+    display: grid;
+    grid-template-columns: auto, auto, auto;
     padding: 0px;
     height: 100vh;
     overflow: scroll;
@@ -141,16 +198,9 @@ td {
 .developer-section { 
     margin-left: 20px;
     margin: 0px;
-    padding-top: 40px;
     padding-left: 100px;
     padding-right: 300px;
     padding-bottom: 40px;
-    color: #323333;
-    font-family: AdobeCaslonProRegular;
-    font-weight: Regular;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: justify;
 }
 
 #logo {
@@ -172,7 +222,7 @@ td {
     position: relative;
     width: 30px;
     padding-right: 15px;
-    padding-bottom: 20px;
+    vertical-align: middle;
 }
 
 
