@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url('/assets/fonts/FuturaPTHeavy.otf')
+}
+
+@font-face {
+    font-family: 'PTMonoRegular';
+    src: url('/assets/fonts/PT-Mono.Regular.ttf')
+}
+
+@font-face {
+    font-family: 'AdobeCaslonProRegular';
+    src: url('/assets/fonts/ACaslonPro-Regular.otf')
+}
+
+
+h1 {
+    padding-top: 150px;
+    padding-left: 100px;
+    margin: 0px;
+    color: #1B34F9;
+    font-family: PTMonoRegular;
+    font-size: 48px;
+}
+
+p {
+    margin: 0px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+    color: #323333;
+    font-family: AdobeCaslonProRegular;
+    font-weight: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+p-2 {
+    margin: 0px;
+    color: #323333;
+    font-family: AdobeCaslonProRegular;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+nav {
+    border-bottom: 2px #FFFF00 solid;
+    width: 100%;
+    /* height: 10vh; */
+    background-color: #d4ece8;
+    position: fixed;
+    /* left: 0px;
+    top: 0px;
+    right: 0px; */
+}
+
+body {
+    margin: 0px;
+    background-color: #d4ece8;
+}
+
+footer {
+    background-color: #d4ece8;
+    border-top: 2px #FFFF00 solid;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+main {
+    /* padding: 10px; */
+    
+}
+table {
+    margin: 0px;
+    margin-left: 150px;
+    margin-right: 250px;
+    border: 1px solid #323333;
+}
+
+td {
+    border-bottom: 1px solid #323333;
+    color: #323333;
+    width: 500px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: #d4ece8;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.box {
+    padding: 0px;
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    background: #d4ece8;
+    
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: repeat(15, 1fr);
+    padding: 0px;
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    border-left: 2px #FFFF00 solid;
+    background: #d4ece8;
+}
+
+.infront {
+    z-index: 9999;
+}
+
+.logo-type {
+    color: #323333;
+    font-family: FuturaPTHeavy;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.images {
+    padding: 0px;
+    width: 25vw;
+}
+
+.social-section { 
+    margin-left: 20px;
+}
+
+.developer-section { 
+    margin-left: 20px;
+    margin: 0px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+    color: #323333;
+    font-family: AdobeCaslonProRegular;
+    font-weight: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+#logo {
+    position: relative;
+    margin-left: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#social_links {
+    position: relative;
+    width: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#developer_links {
+    position: relative;
+    width: 30px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .wrapper { 
+        flex-direction: column;
+    }
+    .box {
+    overflow: visible;
+    height: auto; 
+    }
+    .box2 {
+    overflow: visible;
+    height: auto;
+    border-left: 0px;
+    }
+    .infront {
+        z-index: -1;
+    }
+    .images {
+        width: 50vw;
+    }
+
+    p {
+        padding-top: 35px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    h1 {
+        padding-top: 150px;
+        padding-left: 60px;
+    }
+}
+
