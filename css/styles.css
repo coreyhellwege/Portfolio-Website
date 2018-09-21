@@ -25,9 +25,16 @@
     background: #FFFF00;
 }
 
+a {
+    display:inline-block;
+    text-decoration: none;
+}
+
+br {
+    line-height: 30px;
+}
+
 h1 {
-    padding-top: 150px;
-    padding-left: 100px;
     margin: 0px;
     color: #1B34F9;
     font-family: PTMonoRegular;
@@ -35,12 +42,16 @@ h1 {
     line-height: 60px;
 }
 
-p {
+h3 {
     margin: 0px;
+    padding-top: 10px;
+    color: #1B34F9;
+    font-family: PTMonoRegular;
+    font-size: 15px;
+}
+
+p {
     padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 300px;
-    padding-bottom: 40px;
     color: #323333;
     font-family: AdobeCaslonProRegular;
     font-weight: Regular;
@@ -49,23 +60,11 @@ p {
     text-align: justify;
 }
 
-p-2 {
-    margin: 0px;
-    color: #323333;
-    font-family: AdobeCaslonProRegular;
-    font-size: 14px;
-    line-height: 22px;
-}
-
 nav {
     border-bottom: 2px #FFFF00 solid;
     width: 100%;
-    /* height: 10vh; */
     background-color: #d4ece8;
     position: fixed;
-    /* left: 0px;
-    top: 0px;
-    right: 0px; */
 }
 
 body {
@@ -90,6 +89,7 @@ form {
     margin: 0px;
     margin-left: 150px;
     margin-right: 250px;
+    padding-top: 23px;
 }
 
 table {
@@ -154,16 +154,15 @@ button:focus {
 
 .box {
     display: grid;
-    grid-template-columns: auto, auto, auto;
     padding: 0px;
     height: 100vh;
     overflow: scroll;
     width: 100%;
     background: #d4ece8;
-    
 }
 
 .box2 {
+    position: relative;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: repeat(15, 1fr);
@@ -179,11 +178,30 @@ button:focus {
     z-index: 9999;
 }
 
+.main-paragraph {
+    margin: 0px;
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+}
+
+.second-paragraph {
+    margin: 0px;
+    padding-left: 100px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+}
+
 .logo-type {
     color: #323333;
     font-family: FuturaPTHeavy;
     font-size: 18px;
     letter-spacing: 1px;
+}
+
+.logo-type:hover {
+    color: #1B34F9;
 }
 
 .images {
@@ -196,8 +214,8 @@ button:focus {
 }
 
 .developer-section { 
-    margin-left: 20px;
     margin: 0px;
+    padding-top: 15px;
     padding-left: 100px;
     padding-right: 300px;
     padding-bottom: 40px;
@@ -214,47 +232,84 @@ button:focus {
     position: relative;
     width: 20px;
     padding-left: 15px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #developer_links {
-    position: relative;
     width: 30px;
     padding-right: 15px;
     vertical-align: middle;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     .wrapper { 
         flex-direction: column;
     }
+
     .box {
     overflow: visible;
     height: auto; 
     }
+
     .box2 {
     overflow: visible;
     height: auto;
     border-left: 0px;
     }
+
+    .main-paragraph {
+        margin: 0px;
+        padding-top: 35px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 30px;
+    }
+
+    .second-paragraph {
+        margin: 0px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 50px;
+    }
+
+    .developer-section { 
+        margin: 0px;
+        padding-top: 20px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 40px;
+    }
+
     .infront {
         z-index: -1;
     }
+
     .images {
         width: 50vw;
     }
 
-    p {
+    /* p {
         padding-top: 35px;
         padding-left: 60px;
         padding-right: 60px;
-    }
+    } */
 
     h1 {
-        padding-top: 150px;
-        padding-left: 60px;
+        margin-top: 100px;
+    }
+
+    form {
+        margin: 0px;
+        padding-top: 15px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #developer_links {
+        width: 25px;
+        padding-right: 10px;
+        vertical-align: middle;
     }
 }
 
