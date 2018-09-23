@@ -15,7 +15,7 @@ This website informs viewers of my professional work experience, education backg
 ___
 Search the following URL in your web browser:
 ```bash
-https://coreyhellwege.com
+https://coreyhellwege.netlify.com
 ```
 
 ### **FUNCTIONALITY & FEATURES:**
