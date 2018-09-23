@@ -31,6 +31,8 @@ a {
     text-decoration: none;
 }
 
+a:hover, a:active { text-decoration: none; }
+
 br {
     line-height: 30px;
 }
@@ -75,7 +77,8 @@ body {
 }
 
 a {
-    cursor:url('/assets/img/hand.png'), auto;	
+    cursor:url('/assets/img/hand.png'), auto;
+    text-decoration: none;	
 }
 
 footer {
