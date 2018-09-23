@@ -25,6 +25,7 @@
     background: #FFFF00;
 }
 
+
 a {
     display:inline-block;
     text-decoration: none;
@@ -70,6 +71,11 @@ nav {
 body {
     margin: 0px;
     background-color: #d4ece8;
+    cursor:url('/assets/img/pencil.png'), auto;	
+}
+
+a {
+    cursor:url('/assets/img/hand.png'), auto;	
 }
 
 footer {
@@ -90,6 +96,7 @@ form {
     margin-left: 150px;
     margin-right: 250px;
     padding-top: 23px;
+    padding-bottom: 150px;
 }
 
 table {
@@ -116,7 +123,7 @@ button {
     display: inline-block;
     /* font-size: 16px; */
     margin-top: 6px;
-    cursor: pointer;
+    cursor:url('/assets/img/hand.png'), auto;
     font-family: AdobeCaslonProRegular;
 }
 
@@ -140,6 +147,10 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .wrapper {
@@ -213,12 +224,12 @@ button:focus {
     margin-left: 20px;
 }
 
-.developer-section { 
+.icon-section { 
     margin: 0px;
     padding-top: 15px;
     padding-left: 100px;
-    padding-right: 300px;
-    padding-bottom: 40px;
+    padding-right: 250px;
+    padding-bottom: 30px;
 }
 
 #logo {
@@ -231,13 +242,15 @@ button:focus {
 #social_links {
     position: relative;
     width: 20px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 20px;
 }
 
-#developer_links {
+#icons {
     width: 30px;
-    padding-right: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     vertical-align: middle;
 }
 
@@ -273,7 +286,7 @@ button:focus {
         padding-bottom: 50px;
     }
 
-    .developer-section { 
+    .icon-section { 
         margin: 0px;
         padding-top: 20px;
         padding-left: 15%;
@@ -304,9 +317,10 @@ button:focus {
         padding-top: 15px;
         padding-left: 15%;
         padding-right: 15%;
+        padding-bottom: 70px;
     }
 
-    #developer_links {
+    #icons {
         width: 25px;
         padding-right: 10px;
         vertical-align: middle;
