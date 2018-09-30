@@ -72,6 +72,8 @@ nav {
 
 body {
     margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
     background-color: #d4ece8;
     cursor:url('/assets/img/pencil.png'), auto;	
 }
