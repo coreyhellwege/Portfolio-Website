@@ -325,6 +325,11 @@ button:focus {
         padding-bottom: 70px;
     }
 
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     #icons {
         width: 25px;
         padding-right: 10px;
