@@ -94,6 +94,7 @@ footer {
 
 main {
     /* padding: 10px; */
+    /* margin: 0px; */
 }
 
 form {
@@ -273,7 +274,7 @@ button:focus {
     .box2 {
     overflow: visible;
     height: auto;
-    border-left: 0px;
+    border-left: none;
     }
 
     .main-paragraph {
