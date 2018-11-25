@@ -25,7 +25,6 @@
     background: #FFFF00;
 }
 
-
 a {
     display:inline-block;
     text-decoration: none;
@@ -68,7 +67,7 @@ nav {
     border-bottom: 2px #FFFF00 solid;
     width: 100%;
     background-color: #d4ece8;
-    position: fixed;
+    position: sticky;
 }
 
 body {
@@ -93,17 +92,12 @@ footer {
     width: 100%;
 }
 
-main {
-    /* padding: 10px; */
-    /* margin: 0px; */
-}
-
 form {
     margin: 0px;
     margin-left: 150px;
     margin-right: 250px;
     padding-top: 23px;
-    padding-bottom: 150px;
+    padding-bottom: 110px;
 }
 
 table {
@@ -170,6 +164,16 @@ button:focus {
     font-family: sans-serif;
 }
 
+.wrap {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: #d4ece8;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
 .box {
     display: grid;
     padding: 0px;
@@ -190,6 +194,34 @@ button:focus {
     width: 100%;
     border-left: 2px #FFFF00 solid;
     background: #d4ece8;
+    z-index: 9999;
+}
+
+.box3 {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px;
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    background: #d4ece8;
+}
+
+.box4 {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0px;
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+    background: #d4ece8;
+}
+
+.box3-images {
+    padding: 0px;
+    width: 50vw;
 }
 
 .infront {
@@ -212,14 +244,9 @@ button:focus {
 }
 
 .logo-type {
-    color: #323333;
     font-family: FuturaPTHeavy;
     font-size: 18px;
     letter-spacing: 1px;
-}
-
-.logo-type:hover {
-    color: #1B34F9;
 }
 
 .images {
@@ -239,19 +266,75 @@ button:focus {
     padding-bottom: 30px;
 }
 
+.top {
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+  
+.top2 {
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.bottom {
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    overflow-x: hidden;
+}
+  
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.nav-social-container {
+    position: relative;
+    right: -75%;
+}
+
+.work-footer {
+    display: none;
+}
+
+#siteWrapper {padding-top: 75px;}
+
 #logo {
+    color: #323333;
     position: relative;
     margin-left: 35px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
+#logo:hover {
+    color: #1B34F9;
+}
+
 #social_links {
     position: relative;
     width: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+#nav_social_links {
+    position: relative;
+    width: 19px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
 }
 
 #icons {
@@ -276,6 +359,14 @@ button:focus {
     overflow: visible;
     height: auto;
     border-left: none;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .bottom {
+        width: 100%;
     }
 
     .main-paragraph {
@@ -339,3 +430,84 @@ button:focus {
     }
 }
 
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+    .wrap { 
+        flex-direction: column;
+    }
+
+    .box2 {
+    z-index: -1;
+        }
+
+    .box3-images {
+        width: 100vw;
+    }
+
+    .box3 {
+    margin-top: 50px;
+    overflow: visible;
+    height: auto; 
+    }
+
+    .box4 {
+    margin-top: 0;
+    overflow: visible;
+    height: auto; 
+    }
+
+    .main-paragraph {
+        margin: 0px;
+        padding-top: 35px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 30px;
+    }
+
+    .second-paragraph {
+        margin: 0px;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 50px;
+    }
+    
+    .nav-social-container {
+        display: none;
+      }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .work-footer {
+        display: block;
+    }
+
+    /* .logo-type {
+        font-size: 16px;
+    }
+
+    #social_links {
+        position: relative;
+        width: 15px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    #logo {
+        color: #323333;
+        position: relative;
+        margin-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    } */
+
+}
